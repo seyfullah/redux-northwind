@@ -76,3 +76,7 @@ json-server --watch .\db.json
 
 npm install redux
 npm install react-redux
+npm install reactstrap
+npm install bootstrap
+
+npm install redux-thunk
