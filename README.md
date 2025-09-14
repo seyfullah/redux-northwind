@@ -80,3 +80,4 @@ npm install reactstrap
 npm install bootstrap
 
 npm install redux-thunk
+npm install alertifyjs
