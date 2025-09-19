@@ -17,9 +17,10 @@ export default function cartReducer(state = initialState.cart,
             } else {
                 return [...state, { ...action.payload}];
             }
-        case actionTypes.REMOVE_FROM_CART:
-
-            return action.payload;
+        case actionTypes.REMOVE_FROM_CART: {
+            let newState = state.filter(c => c.product.id !== action.payload.id);
+            return newState;
+        }
         default:
             return state;
     }

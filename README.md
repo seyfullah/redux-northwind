@@ -81,3 +81,5 @@ npm install bootstrap
 
 npm install redux-thunk
 npm install alertifyjs
+
+npm install react-router-dom
