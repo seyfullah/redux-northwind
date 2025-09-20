@@ -4,6 +4,7 @@ import DashBoard from "./DashBoard";
 import { Route, Routes } from "react-router-dom";
 import ProductList from "../products/ProductList";
 import CartDetail from "../cart/CartDetail";
+import AddOrUpdateProduct from "../products/AddOrUpdateProduct";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<DashBoard />} />
         <Route path="/products" element={<ProductList />} />
+        <Route path="/saveproduct/:productId" element={<AddOrUpdateProduct />} />
         <Route path="/cart" element={<CartDetail />} />
       </Routes>
     </Container>
